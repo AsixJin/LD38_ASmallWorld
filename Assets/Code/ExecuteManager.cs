@@ -51,6 +51,8 @@ public class ExecuteManager : MonoBehaviour {
     }
 
     public void showCursor(){
+        cursor.transform.localScale = new Vector3(currentOrb.transform.localScale.x+1.5f,
+            currentOrb.transform.localScale.y + 1.5f, 1);
         cursor.transform.position = currentOrb.gameObject.transform.position;
     }
 
